@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+autopep8 = "*"
+
+[packages]
+django = "*"
+channels = "*"
+channels-redis = "*"
+pyjwt = "*"
+pytest = "*"
+pytest-django = "*"
+pytest-asyncio = "*"
+setuptools = "*"
+
+[requires]
+python_version = "3.8"
