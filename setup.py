@@ -33,7 +33,7 @@ setup(
     classifiers=[
         'Development Status :: 1',
         'Intended Audience :: Developers',
-        'License :: MIT License',
+        'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3.8',
     ],
