@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+autopep8 = "*"
+channels-redis = "*"
+djangorestframework = "*"
+dj-rest-auth = "*"
+djangorestframework-simplejwt = "*"
+django-allauth = "*"
+django-filter = "*"
+markdown = "*"
+pillow = "*"
+django-channels-jwt-auth-middleware = {editable = true, path = "."}
+selenium = "*"
+
+[packages]
+django = "*"
+channels = "*"
+pyjwt = "*"
+
+[requires]
+python_version = "3.8"
