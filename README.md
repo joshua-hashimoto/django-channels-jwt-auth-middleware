@@ -29,6 +29,14 @@ application = ProtocolTypeRouter({
 })
 ```
 
+Now all you have to do is add your JWT token to your webcosket path.
+
+```
+/path/to/consumer/?token=<your JWT token>
+```
+
+`JWTAuthMiddlewareStack` will get the user_id from your JWT and get the user based on it. If it finds the user then it will attach that user to `self.scope['user']` and if it does not it will sttach AnonymousUser to the scope.
+
 `AuthMiddlewareStack` is already in `JWTAuthMiddlewareStack`. If you want to change this, simply do;
 
 ```python
