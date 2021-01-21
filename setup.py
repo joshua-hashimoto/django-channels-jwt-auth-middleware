@@ -31,7 +31,7 @@ setup(
     zip_safe=False,
     keywords='django_channels_jwt_auth_middleware',
     classifiers=[
-        'Development Status :: 1',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
