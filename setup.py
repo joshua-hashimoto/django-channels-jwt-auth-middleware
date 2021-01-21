@@ -13,7 +13,7 @@ setup(
     version='1.0.0',
     description='JWT Auth Middleware for Django Channels',
     long_description=readme + '\n\n' + history,
-    long_description_content_type='text/x-rst',
+    long_description_content_type='text/markdown',
     author='Joshua Hashimoto',
     author_email='onandgo.dev@gmail.com',
     url='https://github.com/joshua-hashimoto/django-channels-jwt-auth-middleware',
