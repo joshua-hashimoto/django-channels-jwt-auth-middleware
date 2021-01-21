@@ -49,7 +49,7 @@ Testing is done by two methods.
 1. automated testing using django's test system.
 2. manual testing by hand.
 
-This is because Django Channels cannot test custom middleware that uses database in the middleware(at lease far as I researched and tried).  
+I have tried testing the middleware through `ChannelsLiveServerTestCase`, but currently this does not run due to pickle error in multiprocessing package from python.  
 For this reason no-token test cases were tested using django's test system using a test project, and test cases with jwt token is tested by hand.  
 Hand testing chrome extension called `Browser WebSocket Client` was used. B
 low is a simple evidence from the hand testing.
