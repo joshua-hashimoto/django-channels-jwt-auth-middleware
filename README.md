@@ -48,7 +48,7 @@ def CustomJWTAuthMiddlewareStack(app):
     return JWTAuthMiddleware(YourCustomMiddlewareStack(app))
 ```
 
-Simply as that :)
+Simple as that :)
 
 ## Testing
 
