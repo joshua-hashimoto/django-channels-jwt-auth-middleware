@@ -59,8 +59,7 @@ Testing is done by two methods.
 
 I have tried testing the middleware through `ChannelsLiveServerTestCase`, but currently this does not run due to pickle error in multiprocessing package from python.  
 For this reason no-token test cases were tested using django's test system using a test project, and test cases with jwt token is tested by hand.  
-Hand testing chrome extension called `Browser WebSocket Client` was used. B
-low is a simple evidence from the hand testing.
+For hand testing chrome extension called `Browser WebSocket Client` was used. Blow is a simple evidence from the hand testing.
 
 ![websocket_connection_with_jwt_token](testproject/evidence/websocket_connection_with_jwt_token.png)
 
