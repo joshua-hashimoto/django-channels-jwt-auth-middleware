@@ -29,13 +29,13 @@ application = ProtocolTypeRouter({
 })
 ```
 
-Now all you have to do is add your JWT token to your webcosket path.
+Then, add your JWT token to your websocket path.
 
 ```
 /path/to/consumer/?token=<your JWT token>
 ```
 
-`JWTAuthMiddlewareStack` will get the user_id from your JWT and get the user based on it. If it finds the user then it will attach that user to `self.scope['user']` and if it does not it will sttach AnonymousUser to the scope.
+`JWTAuthMiddlewareStack` will get the user_id from your JWT and get the user based on it. If it finds the user then it will attach that user to `self.scope['user']`. If it does not find a user the Middleware will sttach an AnonymousUser to the scope.
 
 `AuthMiddlewareStack` is already in `JWTAuthMiddlewareStack`. If you want to change this, simply do;
 
@@ -89,4 +89,4 @@ class TestConsumer(WebsocketConsumer):
         self.send(text_data=json.dumps(context))
 ```
 
-simply, is a data is passed in to the websocket it will return a user id of None for AnonymousUser.
+simply, if a data is passed in to the websocket it will return a user id of None for AnonymousUser.
